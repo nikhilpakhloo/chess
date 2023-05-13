@@ -4,23 +4,17 @@ def is_valid_pawn_move(current_square, new_square):
     current_index = int(current_square)
     new_index = int(new_square)
 
-    # check if the new square is one space above the current square
+    # check if the new square is one space below the current square
     if new_index == current_index + 1:
-        print("The move is valid. ")
-
-        
-    #if both, current square and new square in smae coloum
-    elif new_index == current_index :
-        return ("You didnt move pawn from its current position")
-    
+        return True
 
    # otherwise, the move is not valid
     else:
-        print("Invalid move.")
+        return False
 
 # test the function with an example
-current_square = int(input("Enter the current position:  "))
-new_square = int(input("Enter the new Chall: "))
+current_square = "1"
+new_square = "3"
 is_valid_move = is_valid_pawn_move(current_square, new_square)
 print(is_valid_move)
 
