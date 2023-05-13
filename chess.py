@@ -6,7 +6,7 @@ def is_valid_pawn_move(current_square, new_square):
 
     # check if the new square is one space below the current square
     if new_index == current_index + 1:
-        print("This is avalid move.")
+        print("This is valid move.")
     elif new_index == current_index:
         print("You didnt move the pawn")    
 
